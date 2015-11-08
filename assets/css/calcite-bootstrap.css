@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(https://fast.fonts.net/cssapi/9431e9a5-7a6d-4b5f-82be-4d935972de5a.css);
 @import url(https://fast.fonts.net/cssapi/a2f744b5-a294-49c0-8af9-4599ad0ab33f.css);
 @font-face {
@@ -1151,7 +1150,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Avenir Next W01", "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #4c4c4c;
@@ -5521,7 +5520,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Avenir Next W01", "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5634,7 +5633,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Avenir Next W01", "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6534,8 +6533,6 @@ body {
 .loader-text {
   text-align: center;
   padding-top: 4rem; }
-  .loader-text:after {
-    content: "…"; }
 
 .ie9 .loader-bars {
   position: inherit;

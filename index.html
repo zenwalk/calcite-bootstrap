@@ -51,6 +51,10 @@
             
           
             
+              <li><a href="using"> Using Calcite+Bootstrap</a></li>
+            
+          
+            
               <li><a href="components"> Components</a></li>
             
           
@@ -61,7 +65,7 @@
           
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://github.com/Esri/calcite-bootstrap">Github</a></li>
+          <li><a href="https://github.com/Esri/calcite-bootstrap">GitHub Repo</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div><!-- /.container -->
@@ -88,18 +92,6 @@
             
               
                 <li><a href="#npm" class="side-nav-link">NPM</a></li>
-              
-            
-              
-                <li><a href="#contribute" class="side-nav-link">Contributing</a></li>
-              
-            
-              
-                <li><a href="#dev" class="side-nav-link">Development</a></li>
-              
-            
-              
-                <li><a href="#versions" class="side-nav-link">Versioning</a></li>
               
             
           </ul>
@@ -856,138 +848,6 @@
 </code></pre>
 <h2>Fonts</h2>
 <p>Also add a task in your build process to copy the bootstrap fonts (glyphicons) into your projects assets folder.</p>
-
-
-          
-
-          
-
-          
-
-          
-
-          
-
-          
-
-        </section>
-        <hr>
-      
-        <section>
-          
-            <h2 id="contribute" tabindex="0">Contributing</h2>
-          
-
-          <p>Installing Calcite+Bootstrap was designed to be fairly painless. If you have any problems, be sure to <a href="https://github.com/Esri/calcite-bootstrap/issues/">submit an issue</a>.</p>
-<h2>Where to Find Contributors</h2>
-<p>Contributors communicate on the Slack <a href="https://esri-patterns.slack.com/">ESRI Patterns Team</a> in the #calcite-bootstrap channel.</p>
-<h3>Install Dependencies</h3>
-<p>Calcite Boostrap has these main dependencies.</p>
-<ul>
-<li>Xcode Command Line Tools (for Git)</li>
-<li>Node.js</li>
-<li>Grunt</li>
-<li>Bower</li>
-<li>Sass</li>
-</ul>
-<ol>
-<li>Open Terminal (or your favorite command line tool. For OSX, I recommend iTerm) and check to see if you have Git installed just by entering <code>$ git</code>. You should see a list of commands for git if it is. If Git is not installed, OSX will automatically prompt you to install the XCode Command Line Developers Tools. Follow the prompts to complete the install.</li>
-<li>Visit <a href="http://nodejs.org/">nodejs.org</a> to install Node. Check the install by entering <code>$ node -v</code> in Terminal</li>
-<li>Install Grunt by entering <code>$ npm install -g grunt-cli</code> in Terminal.</li>
-<li>Install Bower by entering <code>$ npm install -g bower</code> in Terminal.</li>
-<li>Install SASS by entering <code>$ gem install sass</code> in Terminal.</li>
-</ol>
-<p>If you run into errors during the installs, Mac Users my want to try using <code>sudo</code>. For example:</p>
-<p><code>$ sudo npm install -g grunt-cli</code> or <code>$ sudo gem install sass</code></p>
-<h3>Fork the Repository</h3>
-<p>All the code for Calcite+Bootstrap lives <a href="https://github.com/ArcGIS/calcite-bootstrap">on GitHub</a>. We use the <a href="https://help.github.com/articles/using-pull-requests/">fork and pull model</a> to manage contribution.</p>
-<ol>
-<li>Fork the repository so you have your own copy (<code>$ your-username/calcite-bootstrap</code>)</li>
-<li>Clone the repo locally with <code>$ git clone https://github.com/your-username/calcite-bootstrap</code></li>
-<li>Move into the clone repo:  <code>$ cd calcite-bootstrap</code></li>
-</ol>
-<h3>Setting up the Repository</h3>
-<ol>
-<li>Install npm modules: <code>$ npm install</code></li>
-<li>Install bower components: <code>$ bower install</code></li>
-</ol>
-<p>Again, if you run into errors during, Mac Users my want to try using <code>sudo</code>.</p>
-<p>When the installs complete run <code>$ grunt</code> to start the application. Open a new browser and navigate to <a href="http://localhost:9000">http://localhost:9000</a>.</p>
-<h3>Git Remote</h3>
-<p>You should also add <code>Esri/calcite-bootstrap</code> as a remote at this point. We generally call this remote branch 'upstream':</p>
-<pre><code>$ git remote <span class="hljs-built_in">add</span> upstream http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/Esri/calcite-bootstrap
-</code></pre>
-<p>Check your configuration: <code>$ git remote -v</code></p>
-<p>The results should look like:</p>
-<pre><code>origin  <span class="hljs-string">https:</span><span class="hljs-comment">//github.com/your-username/calcite-bootstrap.git (fetch)</span>
-origin  <span class="hljs-string">https:</span><span class="hljs-comment">//github.com/your-username/calcite-bootstrap.git (push)</span>
-upstream    <span class="hljs-string">https:</span><span class="hljs-comment">//github.com/Esri/calcite-bootstrap.git (fetch)</span>
-upstream    <span class="hljs-string">https:</span><span class="hljs-comment">//github.com/Esri/calcite-bootstrap.git (push)</span>
-</code></pre>
-<h2>Troubleshooting</h2>
-<p>When running <code>$ bower install</code> if you get an error stating <code>unable to connect to gihub.com</code> you will need to run the following command: <code>git config --global url.&quot;https://&quot;.insteadOf git://</code></p>
-<p>If the above doesn't work, try manually modifying the <code>.git-config</code> file under your user directory (note: it is a hidden file).</p>
-<pre><code>[url <span class="hljs-string">"https://"</span>]
-    insteadOf = <span class="hljs-string">git:</span><span class="hljs-comment">//</span>
-</code></pre>
-<p><a href="http://stackoverflow.com/questions/27417175/bower-install-libraries-issues">link to stackoverflow</a></p>
-<p>You might also want to try installing <code>sudo npm install -g n</code> and <code>sudo npm install -g nvm</code></p>
-<h2>Development</h2>
-<p>To run a development environment, just type <code>$ grunt</code>. You should have a copy of the documentation site live at <a href="http://localhost:8888">localhost:8888</a>.</p>
-<h3>Common Tasks</h3>
-<ul>
-<li><code>$ grunt</code> - [default] builds and then serves up local environment at localhost:8888 (includes watch for updated files)</li>
-<li><code>$ grunt serve</code> - serves local environment at localhost:9000 (no build)</li>
-<li><code>$ grunt build</code> - builds local environment only (no localhost)</li>
-<li><code>$ grunt release</code> - creates <code>calcite-bootstrap.zip</code> file for release in root directory</li>
-<li><code>$ grunt publish</code> - publishes new release candidate to Amazon S3 (requires credentials)</li>
-</ul>
-
-
-          
-
-          
-
-          
-
-          
-
-          
-
-          
-
-        </section>
-        <hr>
-      
-        <section>
-          
-            <h2 id="dev" tabindex="0">Development</h2>
-          
-
-          <p>Development</p>
-
-
-          
-
-          
-
-          
-
-          
-
-          
-
-          
-
-        </section>
-        <hr>
-      
-        <section>
-          
-            <h2 id="versions" tabindex="0">Versioning</h2>
-          
-
-          <p>Versioning</p>
 
 
           
