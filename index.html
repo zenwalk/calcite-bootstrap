@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
     <!-- Use title from page frontmatter -->
-    <title>Calcite Boostrap | Esri Design Patterns</title>
+    <title>Calcite+Boostrap | Esri Design Patterns</title>
 
     <!-- Link to favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.ico">
@@ -51,20 +51,13 @@
             
           
             
-              <li><a href="using"> Using Calcite+Bootstrap</a></li>
-            
-          
-            
-              <li><a href="components"> Components</a></li>
-            
-          
-            
               <li><a href="examples"> Theme Example</a></li>
             
           
           
         </ul>
         <ul class="nav navbar-nav navbar-right">
+          <li><a>Latest release: v0.2.6</a></li>
           <li><a href="https://github.com/Esri/calcite-bootstrap">GitHub Repo</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -77,13 +70,21 @@
   <div class="col-lg-3 col-md-4">
     <aside class="side-nav" aria-role="complementary" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
       
-        <h4 class="side-nav-title">Get Started</h4>
+        <h4 class="side-nav-title"></h4>
         <!-- <nav aria-role="navigation" aria-labelledby="sidenav"> -->
         <nav aria-role="navigation">
           <ul class="nav nav-stacked">
             
               
-                <li><a href="#get-started" class="side-nav-link">Overview</a></li>
+                <li><a href="#cal-boot" class="side-nav-link">Introducing Calcite+Bootstrap</a></li>
+              
+            
+              
+                <li><a href="#building" class="side-nav-link">Building with Calcite+Bootstrap</a></li>
+              
+            
+              
+                <li><a href="#get-started" class="side-nav-link">Getting Started</a></li>
               
             
               
@@ -91,7 +92,19 @@
               
             
               
-                <li><a href="#npm" class="side-nav-link">NPM</a></li>
+                <li><a href="#cdn" class="side-nav-link">Content Delivery Network (CDN)</a></li>
+              
+            
+              
+                <li><a href="#npm" class="side-nav-link">Node Package Manager (NPM)</a></li>
+              
+            
+              
+                <li><a href="#issues" class="side-nav-link">Issues</a></li>
+              
+            
+              
+                <li><a href="#contribute" class="side-nav-link">Contributing</a></li>
               
             
           </ul>
@@ -104,23 +117,71 @@
   <main class="col-lg-9 col-md-8" role="main">
 
     
-      <h1 class="text-rule" id="get-started" tabindex="0">Get Started</h1>
+      <h1 class="text-rule" id="" tabindex="0"></h1>
       
         <section>
           
+            <h2 id="cal-boot" tabindex="0">Introducing Calcite+Bootstrap</h2>
+          
 
-          <p>Calcite+Bootstrap is a UI Kit built on the popular <a href="http://getbootstrap.com">Bootstrap CSS framework</a>.</p>
-<p>Calcite+Bootstrap is an adaptation of Calcite, the desktop framework developed for ArcGIS Pro. The idea is to have designs be consistent, but also embrace the characteristics that make each medium unique.</p>
+          <p>First off, <strong>Calcite</strong> is a flexible design framework, created at ESRI, in which the map and data are the most important component of the user interface. All elements and interactions strengthen a geo-centered user experience.</p>
+<p><strong>Calcite+Bootstrap</strong> is a UI Kit built on the popular <a href="http://getbootstrap.com">Bootstrap</a> CSS framework. It was originally conceived as a boilerplate for ESRI products built with Bootstrap that we are now sharing with the public.</p>
+<p>We have applied the robust set of patterns and utilities that are core to the Calcite framework to Calcite+Bootstrap. The purpose is to have designs be consistent, but also embrace the characteristics that make each medium unique.</p>
 <p>Calcite+Bootstrap was built <em>for</em> developers who have experience working with Bootstrap markup and classes.</p>
-<h2>Using Calcite+Bootstrap</h2>
-<p>Since Calcite+Bootstrap is built on top of Bootstrap, the best source for documentation is the <a href="http://getbootstrap.com">Bootstrap site</a>.</p>
-<p>There are three ways to use Calcite+Bootstrap:</p>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="building" tabindex="0">Building with Calcite+Bootstrap</h2>
+          
+
+          <p>Since Calcite+Bootstrap is built on top of Bootstrap, the best source for documentation is the <a href="http://getbootstrap.com">Bootstrap</a> site.</p>
+<p>We have built this framework to be vary familiar to the Bootstrap developer in that all of the classes and structure naming conventions are maintained throughout. This means that <code>btn-primary</code> or <code>col-md-7</code> is used the same way as you would in either framework.</p>
+<p>There are a few custom elements that have been built in addition to the rest of the framework that help us make it ESRIfied.</p>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="get-started" tabindex="0">Getting Started</h2>
+          
+
+          <p>There are three ways to use Calcite+Bootstrap in your project:</p>
 <ul>
-<li>(a) copying static files into your project</li>
-<li>(b) installing via a package manager</li>
-<li>(c) loading files from the cdn</li>
+<li>Copy the static files into your project</li>
+<li>Load files from the CDN</li>
+<li>Install it via NPM</li>
 </ul>
-<p>Using this framework as a Sass library will give you the most power, but whatever your flavor, we have you covered.</p>
+<p>We do recommend the last option and using this framework as a Sass library. This will give you the most power and flexibility. But whatever your flavor, we have you covered!</p>
 
 
           
@@ -143,649 +204,10 @@
             <h2 id="static-files" tabindex="0">Static Files</h2>
           
 
-          <p>This is probably the easiest way, but you won't get any of the helpful Sass mixins and you will have to manually keep your project in sync with Calcite-Bootstrap. However, if you're looking to get up and running quickly, just <a href="https://github.com/ArcGIS/calcite-bootstrap/releases">download the latest release</a> and move the zipped files to wherever you keep your assets (CSS, JavaScript, images). Be sure to use <a href="http://esri.github.io/calcite-bootstrap/">the documentation site</a> and the <a href="http://getbootstrap.com">main Bootstrap site</a> to copy and paste patterns, components, and even a sample html boilerplate.</p>
-<p>Calcite-Bootstrap releases include the combined and minified bootstrap javascript files in the <code>/dist/js</code> folder. If you have a javascript build system, you can include a step to merge this file with your other scripts. Or you can create a task to simply copy this file into your project's javascript folder. We recommend you automate this instead of manually copying the file so that if/when you upgrade calcite-bootstrap, this file will also be upgraded at the same time.</p>
+          <p>This is probably the easiest way, but you won't get any of the helpful Sass mixins and you will have to manually keep your project in sync with Calcite+Bootstrap. However, if you're looking to get up and running quickly, just <a href="https://github.com/ArcGIS/calcite-bootstrap/releases">download the latest release</a> and move the zipped files to wherever you keep your assets (CSS, JavaScript, images).</p>
+<p>Calcite+Bootstrap releases include the combined and minified bootstrap javascript files in the <code>/dist/js</code> folder. If you have a javascript build system, you can include a step to merge this file with your other scripts. Or you can create a task to simply copy this file into your project's javascript folder. We recommend you automate this instead of manually copying the file so that if/when you upgrade Calcite+Bootstrap, this file will also be upgraded at the same time.</p>
 <p><strong>Note</strong>: The bootstrap javascript files depend on jquery being loaded into the page. We recommend pulling this from the Google CDN.</p>
 <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-</code></pre>
-<h3>Content Delivery Network (CDN)</h3>
-<p>A CDN is being planned for future releases, allowing you to reference Calcite+Bootstrap static assets on a server.</p>
-<p>For the time being - FOR DEVELOPMENT ONLY - you can pull the CSS and javascript files from github. Here is a starter-page.</p>
-<pre><code>
-<span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">"en"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"utf-8"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">http-equiv</span>=<span class="hljs-value">"X-UA-Compatible"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"IE=edge"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"viewport"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"width=device-width, initial-scale=1"</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"description"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">""</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"author"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">""</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"favicon.ico"</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Theme Template for Calcite-Bootstrap<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
-
-    <span class="hljs-comment">&lt;!-- Bootstrap core CSS --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://esri.github.io/calcite-bootstrap/assets/css/calcite-bootstrap-open.min.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span>&gt;</span>
-
-
-    <span class="hljs-comment">&lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;</span>
-    <span class="hljs-comment">&lt;!--[if lt IE 9]&gt;
-      &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;
-      &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;
-    &lt;![endif]--&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-title">body</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"document"</span>&gt;</span>
-
-    <span class="hljs-comment">&lt;!-- Fixed navbar --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar navbar-default navbar-fixed-top"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-header"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-toggle collapsed"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"collapse"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#navbar"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">"navbar"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Toggle navigation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-brand"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Bootstrap theme<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"navbar"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-collapse collapse"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav navbar-nav"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#contact"</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>Dropdown <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"separator"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-header"</span>&gt;</span>Nav header<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>One more separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--/.nav-collapse --&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container theme-showcase"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"main"</span>&gt;</span>
-
-      <span class="hljs-comment">&lt;!-- Main jumbotron for a primary marketing message or call to action --&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"jumbotron"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Theme example<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Buttons<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-link"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-link"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-sm btn-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-sm btn-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-sm btn-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-sm btn-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-sm btn-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-sm btn-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-sm btn-link"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-xs btn-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-xs btn-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-xs btn-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-xs btn-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-xs btn-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-xs btn-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-xs btn-link"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Tables<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Last Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Mark<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Otto<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@mdo<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Jacob<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Thornton<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@fat<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Larry<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>the Bird<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@twitter<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table table-striped"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Last Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Mark<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Otto<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@mdo<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Jacob<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Thornton<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@fat<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Larry<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>the Bird<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@twitter<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table table-bordered"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Last Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">rowspan</span>=<span class="hljs-value">"2"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Mark<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Otto<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@mdo<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Mark<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Otto<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@TwBootstrap<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Jacob<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Thornton<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@fat<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">colspan</span>=<span class="hljs-value">"2"</span>&gt;</span>Larry the Bird<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@twitter<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"table table-condensed"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Last Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Mark<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Otto<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@mdo<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Jacob<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Thornton<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@fat<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">colspan</span>=<span class="hljs-value">"2"</span>&gt;</span>Larry the Bird<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>@twitter<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Thumbnails<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"holder.js/200x200"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-thumbnail"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera"</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Labels<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">h6</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Badges<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Inbox <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"badge"</span>&gt;</span>42<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-pills"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"presentation"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Home <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"badge"</span>&gt;</span>42<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"presentation"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"presentation"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Messages <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"badge"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Dropdown menus<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown theme-dropdown clearfix"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"dropdownMenu1"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>Dropdown <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">"dropdownMenu1"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"separator"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Navs<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"presentation"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"presentation"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"presentation"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Messages<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-pills"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"presentation"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"presentation"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"presentation"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Messages<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Navbars<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar navbar-default"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-header"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-toggle collapsed"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"collapse"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">".navbar-collapse"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Toggle navigation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-brand"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Project name<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-collapse collapse"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav navbar-nav"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#contact"</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>Dropdown <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"separator"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-header"</span>&gt;</span>Nav header<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>One more separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--/.nav-collapse --&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar navbar-inverse"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-header"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-toggle collapsed"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"collapse"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">".navbar-collapse"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Toggle navigation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-brand"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Project name<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-collapse collapse"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav navbar-nav"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#contact"</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>Dropdown <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"separator"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-header"</span>&gt;</span>Nav header<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>One more separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--/.nav-collapse --&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Alerts<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-success"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"alert"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Well done!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> You successfully read this important alert message.
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-info"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"alert"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Heads up!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> This alert needs your attention, but it's not super important.
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-warning"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"alert"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Warning!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Best check yo self, you're not looking too good.
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-danger"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"alert"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Oh snap!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Change a few things up and try submitting again.
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Progress bars<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-bar"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"60"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 60%;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>60% Complete<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-bar progress-bar-success"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"40"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 40%"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>40% Complete (success)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-bar progress-bar-info"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"20"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 20%"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>20% Complete<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-bar progress-bar-warning"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"60"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 60%"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>60% Complete (warning)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-bar progress-bar-danger"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"80"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 80%"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>80% Complete (danger)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-bar progress-bar-striped"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"60"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 60%"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>60% Complete<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-bar progress-bar-success"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 35%"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>35% Complete (success)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-bar progress-bar-warning"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 20%"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>20% Complete (warning)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-bar progress-bar-danger"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 10%"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'sr-only'</span>&gt;</span>10% Complete (danger)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>List groups<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-4"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>Cras justo odio<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>Morbi leo risus<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>Porta ac consectetur ac<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>Vestibulum at eros<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /.col-sm-4 --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-4"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item active"</span>&gt;</span>
-              Cras justo odio
-            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>Morbi leo risus<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>Porta ac consectetur ac<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>Vestibulum at eros<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /.col-sm-4 --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-4"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item active"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item-heading"</span>&gt;</span>List group item heading<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item-text"</span>&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item-heading"</span>&gt;</span>List group item heading<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item-text"</span>&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item-heading"</span>&gt;</span>List group item heading<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-group-item-text"</span>&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /.col-sm-4 --&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Panels<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-4"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-default"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-heading"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-title"</span>&gt;</span>Panel title<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
-              Panel content
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-primary"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-heading"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-title"</span>&gt;</span>Panel title<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
-              Panel content
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /.col-sm-4 --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-4"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-success"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-heading"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-title"</span>&gt;</span>Panel title<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
-              Panel content
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-info"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-heading"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-title"</span>&gt;</span>Panel title<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
-              Panel content
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /.col-sm-4 --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-4"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-warning"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-heading"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-title"</span>&gt;</span>Panel title<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
-              Panel content
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-danger"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-heading"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-title"</span>&gt;</span>Panel title<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
-              Panel content
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /.col-sm-4 --&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Wells<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"well"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"page-header"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Carousel<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"carousel-example-generic"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"carousel slide"</span> <span class="hljs-attribute">data-ride</span>=<span class="hljs-value">"carousel"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"carousel-indicators"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">data-slide-to</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">data-slide-to</span>=<span class="hljs-value">"1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">data-slide-to</span>=<span class="hljs-value">"2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"carousel-inner"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"listbox"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"item active"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://lorempixel.com/1140/500/business/First-Slide"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"First slide"</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"item"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://lorempixel.com/1140/500/animals/Second-Slide"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Second slide"</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"item"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://lorempixel.com/1140/500/abstract/Third-Slide"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Third slide"</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left carousel-control"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">data-slide</span>=<span class="hljs-value">"prev"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"glyphicon glyphicon-chevron-left"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right carousel-control"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">data-slide</span>=<span class="hljs-value">"next"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"glyphicon glyphicon-chevron-right"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- /container --&gt;</span>
-
-
-    <span class="hljs-comment">&lt;!-- Bootstrap core JavaScript
-    ================================================== --&gt;</span>
-    <span class="hljs-comment">&lt;!-- Placed at the end of the document so the pages load faster --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://esri.github.io/calcite-bootstrap/assets/js/bootstrap.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-    
-  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
-
-
 </code></pre>
 
 
@@ -806,18 +228,44 @@
       
         <section>
           
-            <h2 id="npm" tabindex="0">NPM</h2>
+            <h2 id="cdn" tabindex="0">Content Delivery Network (CDN)</h2>
+          
+
+          <p>A CDN is being planned for future releases, allowing you to reference Calcite+Bootstrap static assets on a server.</p>
+<p>For the time being - FOR DEVELOPMENT ONLY - you can pull the CSS and javascript files from github.</p>
+<pre><code>&lt;link <span class="hljs-variable">href=</span><span class="hljs-string">"http://esri.github.io/calcite-bootstrap/assets/css/calcite-bootstrap-open.min.css"</span> <span class="hljs-variable">rel=</span><span class="hljs-string">"stylesheet"</span>&gt;
+</code></pre>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="npm" tabindex="0">Node Package Manager (NPM)</h2>
           
 
           <p>To install Calcite+Bootstrap with npm, type:</p>
 <pre><code>npm <span class="hljs-keyword">install</span> --save-dev Esri/calcite-bootstrap<span class="hljs-comment">#v0.2.6</span>
 </code></pre>
 <p>You must add the current version in order to get the <code>dist/</code> folder that contains the compiled CSS and the source sass files.</p>
-<h2>Using the Compiled CSS</h2>
+<h3>Using the Compiled CSS</h3>
 <p>In your build tool (grunt/gulp/npm etc) you need to add a step to copy the compiled resource out of the <code>node_modules/calcite-bootstrap/dist/css</code> folder into your projects assets folder.</p>
-<h2>Using Sass</h2>
+<h3>Using Sass</h3>
 <p>Initially this will seem like a lot more setup and work, but you get a lot more flexibility as well as the ability to greatly reduce the size of the CSS file loaded into the browser. We also recommend using a project scaffolding tool such as <a href="http://yeoman.io">Yeoman's</a> <a href="https://github.com/yeoman/generator-gulp-webapp">gulp-webapp</a> which can greatly streamline getting all the tooling setup.</p>
-<h3>Sass Import Paths</h3>
+<h4>Sass Import Paths</h4>
 <p>In order to use calcite-bootstrap in your sass/scss files, you will need to inform your sass processor where to look.</p>
 <p>The syntax varies depending on the build system you are using, but with grunt-sass, it looks like this:</p>
 <pre><code><span class="xml">  'sass': </span><span class="hljs-expression">{
@@ -846,8 +294,54 @@
 <span class="hljs-variable">$icon-font-path</span><span class="hljs-value">: <span class="hljs-string">'./fonts/'</span>;</span>
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'bootstrap'</span>;</span>
 </code></pre>
-<h2>Fonts</h2>
+<h3>Fonts</h3>
 <p>Also add a task in your build process to copy the bootstrap fonts (glyphicons) into your projects assets folder.</p>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="issues" tabindex="0">Issues</h2>
+          
+
+          <p>Find a bug or want to request a new feature?  Please let us know by submitting an issue.  Thank you!</p>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="contribute" tabindex="0">Contributing</h2>
+          
+
+          <p>Anyone and everyone is welcome to contribute. Please see our <a href="https://github.com/esri/contributing">guidelines for contributing</a>.</p>
 
 
           
