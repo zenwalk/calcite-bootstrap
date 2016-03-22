@@ -6464,7 +6464,7 @@ body {
   padding: 0; }
   .cards-list > li {
     float: left;
-    padding: 0 13px; }
+    padding: 0 15px; }
   .cards-list li {
     list-style: none; }
 
@@ -6530,17 +6530,17 @@ body {
       transition: 1200ms; }
     .card-options .glyphicon:nth-child(4) {
       transition: 1500ms; }
-  .card-options:hover, .card-options:active, .card-options:focus {
+  .card-options:hover {
     opacity: 1;
     cursor: pointer;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); }
-    .card-options:hover > button, .card-options:active > button, .card-options:focus > button {
+    .card-options:hover > button {
       transform: translateY(30px);
       visibility: visible; }
-    .card-options:hover .glyphicon, .card-options:active .glyphicon, .card-options:focus .glyphicon {
+    .card-options:hover .glyphicon {
       transform: translateX(-30px);
       visibility: visible; }
-    .card-options:hover li, .card-options:active li, .card-options:focus li {
+    .card-options:hover li {
       visibility: visible; }
   .card-options ul {
     position: absolute;
@@ -6568,7 +6568,7 @@ body {
     visibility: hidden;
     font-size: 1.5rem;
     line-height: 1.6rem; }
-    .card-options button:hover, .card-options button:active, .card-options button:focus {
+    .card-options button:hover {
       text-decoration: none;
       border: 1px solid white;
       color: white;
