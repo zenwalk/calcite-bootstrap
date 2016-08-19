@@ -57,7 +57,7 @@
           
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a>Latest release: v0.2.12</a></li>
+          <li><a>Latest release: v0.3.3</a></li>
           <li><a href="https://github.com/Esri/calcite-bootstrap">GitHub Repo</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -273,7 +273,7 @@
     <span class="hljs-variable">options</span>: {
       <span class="hljs-variable">includePaths</span>: [
         '<span class="hljs-variable">.</span><span class="hljs-end-block">/node</span>_<span class="hljs-variable">modules</span><span class="hljs-end-block">/bootstrap-sass</span><span class="hljs-end-block">/assets</span><span class="hljs-end-block">/stylesheets</span>'
-        '<span class="hljs-variable">.</span><span class="hljs-end-block">/node</span>_<span class="hljs-variable">modules</span><span class="hljs-end-block">/calcite-bootstrap</span><span class="hljs-end-block">/dist</span>'
+        '<span class="hljs-variable">.</span><span class="hljs-end-block">/node</span>_<span class="hljs-variable">modules</span><span class="hljs-end-block">/calcite-bootstrap</span><span class="hljs-end-block">/dist</span><span class="hljs-end-block">/sass</span>'
       ]
     }</span><span class="xml">
     ...other configuration as needed...
@@ -366,7 +366,7 @@
           
 
           <p>The following projects have been built using Calcite Bootstrap as their CSS framework.</p>
-<p><strong><a href="http://esri.github.io/calcite-maps/extras/index.html">Calcite Maps</a></strong> - A theme for designing beautiful mapping apps.</p>
+<p><strong><a href="http://esri.github.io/calcite-maps/samples/index.html">Calcite Maps</a></strong> - A theme for designing beautiful mapping apps.</p>
 
 
           
@@ -392,6 +392,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+    });
+    </script>
   </body>
 
 </html>
