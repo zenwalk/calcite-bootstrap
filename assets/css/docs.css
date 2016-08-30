@@ -1,5 +1,5 @@
 .content-body {
-  padding-top: 20px; }
+  padding-top: 40px; }
 
 footer {
   position: relative !important;
@@ -9,3 +9,43 @@ footer {
 .example-header {
   margin-left: 40px;
   margin-right: 40px; }
+
+.samples {
+  background-color: #fff !important; }
+
+.samples p {
+  margin-bottom: 0px; }
+
+/* Pseudo :focus state for showing how it looks in the docs */
+#focusedInput {
+  border-color: #cccccc;
+  /* Restate unfocused value to make CSSLint happy that there's a pre-CSS3 fallback*/
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: 0 0 8px rgba(82, 168, 236, 0.6); }
+
+.color-bar {
+  font-size: 1px; }
+  .color-bar .col-xs-2 {
+    height: 10px; }
+  .color-bar .esri-blue {
+    background-color: #007ac2; }
+  .color-bar .esri-orange {
+    background-color: #da4d1e; }
+  .color-bar .esri-green {
+    background-color: #35ac46; }
+  .color-bar .esri-purple {
+    background-color: #8f499c; }
+  .color-bar .esri-brown {
+    background-color: #7b4f1c; }
+  .color-bar .esri-gray {
+    background-color: #6e6e6e; }
+
+.banner {
+  text-align: center;
+  background: #004575;
+  padding: 40px 0;
+  color: #ffffff; }
